@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title description">
+  <title id="title">Pitch Signal portfolio cover</title>
+  <desc id="description">Explainable football analytics platform built with TypeScript, React, Fastify and PostgreSQL</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080b09"/>
+      <stop offset="1" stop-color="#0d1811"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1050 20) rotate(135) scale(520)">
+      <stop stop-color="#21623a" stop-opacity=".56"/>
+      <stop offset="1" stop-color="#21623a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000" flood-opacity=".45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#background)"/>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <path d="M0 790C250 696 430 856 706 770c196-61 317-205 494-161v291H0Z" fill="#65d487" opacity=".035"/>
+
+  <g transform="translate(72 66)">
+    <rect width="62" height="62" rx="16" fill="#65d487"/>
+    <text x="31" y="40" text-anchor="middle" fill="#071109" font-family="Inter,Arial,sans-serif" font-size="23" font-weight="900" letter-spacing="-1">PS</text>
+    <text x="82" y="29" fill="#ecf4ee" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="750">Pitch Signal</text>
+    <text x="83" y="51" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="1.8">FOOTBALL ANALYTICS</text>
+  </g>
+
+  <g transform="translate(72 190)">
+    <text fill="#65d487" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="750" letter-spacing="2.2">FULL-STACK TYPESCRIPT PLATFORM</text>
+    <text y="70" fill="#ecf4ee" font-family="Inter,Arial,sans-serif" font-size="59" font-weight="780" letter-spacing="-2.8">Explainable trends.</text>
+    <text y="132" fill="#ecf4ee" font-family="Inter,Arial,sans-serif" font-size="59" font-weight="780" letter-spacing="-2.8">Auditable signals.</text>
+    <text y="183" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="18">Recent match data turned into transparent,</text>
+    <text y="211" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="18">sample-aware statistical evidence.</text>
+  </g>
+
+  <g transform="translate(72 512)" filter="url(#shadow)">
+    <rect width="1056" height="290" rx="22" fill="#101512" stroke="#27302a"/>
+    <rect x="1" y="1" width="1054" height="54" rx="21" fill="#151c18"/>
+    <circle cx="28" cy="28" r="5" fill="#65d487"/>
+    <circle cx="47" cy="28" r="5" fill="#e9c95b" opacity=".75"/>
+    <circle cx="66" cy="28" r="5" fill="#526057"/>
+    <text x="92" y="34" fill="#dfe9e1" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="650">Northbridge FC  —  Southport Athletic</text>
+    <text x="1018" y="34" text-anchor="end" fill="#65d487" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700">10 / 10 MATCHES</text>
+
+    <g transform="translate(24 76)">
+      <rect width="430" height="188" rx="14" fill="#0d110f" stroke="#27302a"/>
+      <text x="18" y="30" fill="#ecf4ee" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700">Recent performance</text>
+      <text x="18" y="52" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="10">METRIC</text>
+      <text x="220" y="52" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="10">AVERAGE</text>
+      <text x="326" y="52" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="10">LAST 5</text>
+      <line x1="18" y1="62" x2="412" y2="62" stroke="#27302a"/>
+      <text x="18" y="88" fill="#dfe9e1" font-family="Inter,Arial,sans-serif" font-size="12">Corners</text>
+      <text x="220" y="88" fill="#dfe9e1" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700">7.5</text>
+      <text x="326" y="88" fill="#65d487" font-family="Inter,Arial,sans-serif" font-size="12">8 · 7 · 9 · 6 · 8</text>
+      <line x1="18" y1="102" x2="412" y2="102" stroke="#27302a"/>
+      <text x="18" y="128" fill="#dfe9e1" font-family="Inter,Arial,sans-serif" font-size="12">Shots on target</text>
+      <text x="220" y="128" fill="#dfe9e1" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700">6.0</text>
+      <text x="326" y="128" fill="#65d487" font-family="Inter,Arial,sans-serif" font-size="12">6 · 6 · 6 · 6 · 6</text>
+      <line x1="18" y1="142" x2="412" y2="142" stroke="#27302a"/>
+      <text x="18" y="168" fill="#dfe9e1" font-family="Inter,Arial,sans-serif" font-size="12">Yellow cards</text>
+      <text x="220" y="168" fill="#dfe9e1" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700">2.0</text>
+      <text x="326" y="168" fill="#65d487" font-family="Inter,Arial,sans-serif" font-size="12">2 · 2 · 2 · 2 · 2</text>
+    </g>
+
+    <g transform="translate(474 76)">
+      <rect width="558" height="188" rx="14" fill="#0d110f" stroke="#27302a"/>
+      <text x="18" y="30" fill="#ecf4ee" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700">Strongest statistical signal</text>
+      <rect x="442" y="16" width="96" height="26" rx="13" fill="#14251a" stroke="#3e5848"/>
+      <text x="490" y="33" text-anchor="middle" fill="#65d487" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="750">HIGH  ·  82.4</text>
+      <text x="18" y="74" fill="#ecf4ee" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">Northbridge FC: corners over 5.5</text>
+      <g transform="translate(18 98)">
+        <text fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="10">HIT RATE</text>
+        <text y="25" fill="#ecf4ee" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="750">100%</text>
+        <text x="105" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="10">SAMPLE</text>
+        <text x="105" y="25" fill="#ecf4ee" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="750">10</text>
+        <text x="200" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="10">WILSON LB</text>
+        <text x="200" y="25" fill="#ecf4ee" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="750">72.2%</text>
+        <text x="318" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="10">AVERAGE</text>
+        <text x="318" y="25" fill="#ecf4ee" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="750">7.5</text>
+        <text x="420" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="10">OPPONENT</text>
+        <text x="420" y="25" fill="#ecf4ee" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="750">7.0</text>
+      </g>
+      <rect x="18" y="154" width="520" height="5" rx="2.5" fill="#27302a"/>
+      <rect x="18" y="154" width="428" height="5" rx="2.5" fill="#65d487"/>
+    </g>
+  </g>
+
+  <g transform="translate(72 844)">
+    <text fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="650">TYPESCRIPT</text>
+    <circle cx="110" cy="-5" r="2" fill="#526057"/>
+    <text x="126" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="650">REACT</text>
+    <circle cx="189" cy="-5" r="2" fill="#526057"/>
+    <text x="205" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="650">FASTIFY</text>
+    <circle cx="281" cy="-5" r="2" fill="#526057"/>
+    <text x="297" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="650">POSTGRESQL</text>
+    <circle cx="406" cy="-5" r="2" fill="#526057"/>
+    <text x="422" fill="#8c9a90" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="650">DOCKER</text>
+    <text x="1056" text-anchor="end" fill="#65d487" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700">github.com/akoody/pitch-signal</text>
+  </g>
+</svg>
