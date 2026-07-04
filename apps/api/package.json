@@ -1,0 +1,30 @@
+{
+  "name": "@pitch-signal/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "morning": "tsx src/cli.ts morning",
+    "quota": "tsx src/cli.ts quota",
+    "db:migrate": "tsx src/cli.ts migrate",
+    "demo:seed": "tsx src/cli.ts demo:seed",
+    "typecheck": "tsc -b --pretty false"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "@pitch-signal/core": "0.1.0",
+    "@pitch-signal/provider-footballdata-io": "0.1.0",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.2",
+    "kysely": "^0.28.8",
+    "pg": "^8.16.3",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.6",
+    "tsx": "^4.21.0"
+  }
+}

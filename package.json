@@ -1,0 +1,56 @@
+{
+  "name": "pitch-signal",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@11.6.2",
+  "description": "Explainable football match trend analysis for corners, fouls, cards and shots.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akoody/pitch-signal.git"
+  },
+  "homepage": "https://github.com/akoody/pitch-signal#readme",
+  "bugs": {
+    "url": "https://github.com/akoody/pitch-signal/issues"
+  },
+  "keywords": [
+    "football",
+    "analytics",
+    "statistics",
+    "typescript",
+    "fastify",
+    "react"
+  ],
+  "engines": {
+    "node": ">=20.19"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev": "concurrently -k -n api,web -c cyan,magenta \"npm run dev -w @pitch-signal/api\" \"npm run dev -w @pitch-signal/web\"",
+    "dev:api": "npm run dev -w @pitch-signal/api",
+    "dev:web": "npm run dev -w @pitch-signal/web",
+    "morning": "npm run morning -w @pitch-signal/api",
+    "quota": "npm run quota -w @pitch-signal/api",
+    "db:migrate": "npm run db:migrate -w @pitch-signal/api",
+    "demo:seed": "npm run demo:seed -w @pitch-signal/api",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -b --pretty false",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^20.19.25",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.2",
+    "globals": "^16.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.1",
+    "vitest": "^4.0.16"
+  }
+}

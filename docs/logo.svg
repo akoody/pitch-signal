@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="180" viewBox="0 0 720 180" role="img" aria-labelledby="title description">
+  <title id="title">Pitch Signal</title>
+  <desc id="description">Pitch Signal logo</desc>
+  <rect width="720" height="180" rx="28" fill="#080b09"/>
+  <rect x="42" y="42" width="96" height="96" rx="24" fill="#65d487"/>
+  <path d="M67 112V68h25c15 0 24 8 24 21 0 14-10 22-25 22H81v-13h10c7 0 11-3 11-9 0-5-4-8-11-8H81v31H67Z" fill="#071109"/>
+  <circle cx="119" cy="119" r="7" fill="#071109"/>
+  <text x="170" y="94" fill="#ecf4ee" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="48" font-weight="760" letter-spacing="-2">Pitch Signal</text>
+  <text x="173" y="123" fill="#8c9a90" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" letter-spacing="1.8">EXPLAINABLE FOOTBALL TRENDS</text>
+</svg>

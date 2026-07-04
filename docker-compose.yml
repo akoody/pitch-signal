@@ -1,0 +1,50 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: pitch_signal
+      POSTGRES_USER: pitch_signal
+      POSTGRES_PASSWORD: pitch_signal
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - pitch_signal_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pitch_signal -d pitch_signal"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    environment:
+      NODE_ENV: production
+      PORT: 4100
+      WEB_ORIGIN: http://localhost:8080
+      DATABASE_URL: postgres://pitch_signal:pitch_signal@postgres:5432/pitch_signal
+      FOOTBALLDATA_IO_KEY: ${FOOTBALLDATA_IO_KEY:-}
+      FOOTBALLDATA_IO_BASE_URL: ${FOOTBALLDATA_IO_BASE_URL:-https://footballdata.io/api/v1}
+      FOOTBALLDATA_IO_MONTHLY_BUDGET: ${FOOTBALLDATA_IO_MONTHLY_BUDGET:-1000}
+      REPORT_TIMEZONE: ${REPORT_TIMEZONE:-Asia/Novokuznetsk}
+      HISTORY_MATCHES_PER_TEAM: ${HISTORY_MATCHES_PER_TEAM:-10}
+      HISTORY_LOOKBACK_DAYS: ${HISTORY_LOOKBACK_DAYS:-180}
+      MIN_SAMPLE_SIZE: ${MIN_SAMPLE_SIZE:-5}
+    ports:
+      - "4100:4100"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+
+volumes:
+  pitch_signal_postgres:
