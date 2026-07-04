@@ -34,8 +34,8 @@ jobs:
       DATABASE_URL: postgres://pitch_signal:pitch_signal@localhost:5432/pitch_signal_test
       FOOTBALLDATA_IO_KEY: ""
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 20.19
           cache: npm
