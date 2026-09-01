@@ -44,13 +44,13 @@
     "check": "npm run lint && npm run typecheck && npm test && npm run build"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.2",
-    "@types/node": "^20.19.25",
-    "concurrently": "^9.2.1",
-    "eslint": "^9.39.2",
-    "globals": "^16.5.0",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.1",
-    "vitest": "^4.0.16"
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.4.0",
+    "concurrently": "^10.0.5",
+    "eslint": "^10.9.1",
+    "globals": "^17.11.0",
+    "typescript": "^7.0.2",
+    "typescript-eslint": "^8.68.0",
+    "vitest": "^4.1.11"
   }
 }

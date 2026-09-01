@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "@pitch-signal/core": "0.1.0",
-    "zod": "^4.3.5"
+    "zod": "^4.5.2"
   }
 }
