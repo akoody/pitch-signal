@@ -14,17 +14,17 @@
     "typecheck": "tsc -b --pretty false"
   },
   "dependencies": {
-    "@fastify/cors": "^11.2.0",
+    "@fastify/cors": "^11.3.0",
     "@pitch-signal/core": "0.1.0",
     "@pitch-signal/provider-footballdata-io": "0.1.0",
-    "dotenv": "^17.2.3",
-    "fastify": "^5.6.2",
-    "kysely": "^0.28.8",
-    "pg": "^8.16.3",
-    "zod": "^4.3.5"
+    "dotenv": "^18.0.2",
+    "fastify": "^5.12.5",
+    "kysely": "^0.29.6",
+    "pg": "^8.23.0",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
-    "@types/pg": "^8.15.6",
-    "tsx": "^4.21.0"
+    "@types/pg": "^8.23.1",
+    "tsx": "^4.23.15"
   }
 }
